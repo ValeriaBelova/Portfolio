@@ -1,8 +1,8 @@
 body{
     background-color: rgb(175, 226, 191);
-
+    color:#0d134f;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.9;
+    line-height: 1.5;
     font-size: 18px;
     text-align: center;
 }
@@ -11,6 +11,12 @@ body{
 h1,h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
+h2{
+    color:rgb(11, 121, 17);
+}
+
 
 a:hover{
     background-color: rgb(232, 240, 142);
@@ -26,13 +32,52 @@ a:visited{
 
 .title{
     text-align: center;
-    font-size: 45px;
-    color:#060d4d;
+    font-size: 55px;
+    color:#032a15;
+}
+
+
+.wrap{
+    height: 50vh;
+    display: -webkit-box;
+    display: -webkit-inline-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-box-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack:center;
+    justify-content: center;
+    -ms-flex-pack: center;
+}
+
+
+.block{
+    width: 20%;
 }
 
 
 .photo{
-    width: 350px; height: 400px;
+    overflow: hidden;
+}
+
+
+.photo img {
+    width:100%;
+    height:100%;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5;
+    transition: transform 0.5s;
+    transition:transform 0.5s, -webkit-transform 0.5s;
+}
+
+
+.photo:hover img{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
